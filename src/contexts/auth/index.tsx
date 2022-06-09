@@ -1,10 +1,11 @@
 import React, {createContext, ReactNode, useContext} from 'react'
 
-import { getLoggedUserId } from '@/utils/getLoggedUserId'
+import { getLoggedUserId } from "@/utils/getLoggedUserId"
 
 type CtxProps = {
     userId?: number | null
 }
+
 export const AuthContext = createContext<CtxProps>({
     userId: null
 })
@@ -14,11 +15,13 @@ type Props = {
     initialTranslations?: Record<string, string>
 }
 
+export let toto = ''
+
 const AuthProvider: React.FC<Props> = ({ children }) => {
     const userId = getLoggedUserId()
 
     return (
-        <AuthContext.Provider value={{ userId }}>
+        <AuthContext.Provider  value={{ userId }}>
             {children}
         </AuthContext.Provider>
     )
