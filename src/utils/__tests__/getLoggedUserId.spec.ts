@@ -1,4 +1,4 @@
-import { getLoggedUserId } from '../getLoggedUserId'
+import { getLoggedUserId } from '@/utils/getLoggedUserId'
 
 describe('getLoggedUserId', () => {
   it('should return logged user id', () => {
