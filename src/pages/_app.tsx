@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
+import { ThemeProvider } from 'styled-components'
 
 import AuthProvider from '@/contexts/auth'
-import { ThemeProvider } from 'styled-components'
 import theme from '@/themes'
 import '@/styles/globals.css'
 
