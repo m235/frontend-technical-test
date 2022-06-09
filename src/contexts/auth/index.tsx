@@ -1,5 +1,6 @@
 import React, {createContext, ReactNode, useContext} from 'react'
-import {getLoggedUserId} from "@/utils/getLoggedUserId";
+
+import { getLoggedUserId } from '@/utils/getLoggedUserId'
 
 type CtxProps = {
     userId?: number | null
