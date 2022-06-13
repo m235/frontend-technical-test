@@ -9,4 +9,7 @@ module.exports = {
       dirs: ['src/pages', 'src/contexts'],
     },
   },
+  compiler: {
+    styledComponents: true,
+  },
 }
