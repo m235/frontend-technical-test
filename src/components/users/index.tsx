@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useMemo } from 'react'
 import { useRouter } from 'next/router'
 
 import Avatar from '@/components/avatar'
@@ -7,6 +7,7 @@ import useConversations from '@/hooks/useConversations'
 import useCreateConversation from '@/hooks/useCreateConversation'
 import useUsers from '@/hooks/useUsers'
 import { getNicknameInitials } from '@/utils/getNicknameInitials'
+import { getUserIdsFromConversations } from '@/utils/getUserIdsFromConversations'
 
 import * as Styles from './styles'
 
@@ -23,8 +24,7 @@ const UserList: FC = () => {
     },
   })
 
-  // todo: utils
-  const alreadyExist = conversations?.reduce((acc, curr) => [...acc, curr.recipientId, curr.senderId], [userId]) ?? []
+  const alreadyExist = useMemo(() => [...getUserIdsFromConversations(conversations), userId], [conversations, userId])
 
   return (
     <Styles.Container role="list">
