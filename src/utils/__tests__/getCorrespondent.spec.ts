@@ -1,6 +1,6 @@
 import { getCorrespondent } from '@/utils/getCorrespondent'
 
-describe('getCorrespondent', () => {
+describe('utils:getCorrespondent', () => {
   const conversation = { senderNickname: 'Mael', recipientNickname: 'Not Mael', senderId: 1, recipientId: 2, id: 1 }
   it('should return the senderNickname', () => {
     const expected = 'Mael'
@@ -13,6 +13,7 @@ describe('getCorrespondent', () => {
     expect(getCorrespondent(1, conversation)).toEqual(expected)
   })
   it('should throw an exception', () => {
-    expect(getCorrespondent).toThrowError()
+    const expected = () => getCorrespondent(3, conversation)
+    expect(expected).toThrowError('You are nor the recipient nor the sender')
   })
 })

@@ -1,6 +1,6 @@
 import { getUserIdsFromConversations } from '@/utils/getUserIdsFromConversations'
 
-describe('getNicknameInitials', () => {
+describe('utils:getUserIdsFromConversations', () => {
   const conversations = [
     { senderNickname: 'Mael', recipientNickname: 'Not Mael', senderId: 1, recipientId: 2, id: 1 },
     { senderNickname: 'Mael 2', recipientNickname: 'Not Mael 2', senderId: 3, recipientId: 4, id: 2 },

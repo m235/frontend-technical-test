@@ -1,6 +1,6 @@
 import { getNicknameInitials } from '@/utils/getNicknameInitials'
 
-describe('getNicknameInitials', () => {
+describe('utils:getNicknameInitials', () => {
   it('should return a single letter', () => {
     const expected = 'J'
 
