@@ -99,34 +99,6 @@
       "conversationId": 1,
       "timestamp": 1654876263209,
       "id": 10
-    },
-    {
-      "authorId": 2,
-      "body": "Test",
-      "conversationId": 1,
-      "timestamp": 1655209099540,
-      "id": 11
-    },
-    {
-      "authorId": 2,
-      "body": "Et un autre message encore un peu plus long pour vérifier le scroll sur cette conversation super longue et super ennuyante !",
-      "conversationId": 1,
-      "timestamp": 1655210332015,
-      "id": 12
-    },
-    {
-      "authorId": 1,
-      "body": "qfqfqf",
-      "conversationId": 2,
-      "timestamp": 1655224251634,
-      "id": 13
-    },
-    {
-      "authorId": 1,
-      "body": "test\n",
-      "conversationId": 1,
-      "timestamp": 1655282373435,
-      "id": 14
     }
   ],
   "users": [
