@@ -11,11 +11,22 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 import Layout from '@/components/layout'
 import GlobalStyle from '@/styles/globals'
 import NProgressStyle from '@/styles/nprogress'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
-  const [queryClient] = useState(() => new QueryClient())
+  const [queryClient] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            retry: false,
+            refetchOnWindowFocus: false,
+          },
+        },
+      })
+  )
 
   useEffect(() => {
     router.events.on('routeChangeStart', NProgress.start)
@@ -31,6 +42,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={theme}>
+      <Head>
+        <title>Conversations test</title>
+      </Head>
       <GlobalStyle />
       <NProgressStyle />
       <QueryClientProvider client={queryClient}>

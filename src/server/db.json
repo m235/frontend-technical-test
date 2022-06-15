@@ -1,28 +1,39 @@
 {
   "conversations": [
     {
-      "id": 1,
+      "senderId": 1,
       "recipientId": 2,
       "recipientNickname": "Jeremie",
-      "senderId": 1,
       "senderNickname": "Thibaut",
-      "lastMessageTimestamp": 1625637849
+      "id": 1
     },
     {
-      "id": 2,
-      "recipientId": 3,
-      "recipientNickname": "Patrick",
-      "senderId": 1,
-      "senderNickname": "Thibaut",
-      "lastMessageTimestamp": 1620284667
-    },
-    {
-      "id": 3,
+      "senderId": 3,
       "recipientId": 1,
       "recipientNickname": "Thibaut",
-      "senderId": 4,
-      "senderNickname": "Elodie",
-      "lastMessageTimestamp": 1625648667
+      "senderNickname": "Patrick",
+      "id": 2
+    },
+    {
+      "senderId": 1,
+      "recipientId": 4,
+      "recipientNickname": "Elodie",
+      "senderNickname": "Thibaut",
+      "id": 3
+    },
+    {
+      "senderId": 1,
+      "recipientId": 5,
+      "recipientNickname": "Mael",
+      "senderNickname": "userId",
+      "id": 4
+    },
+    {
+      "senderId": 1,
+      "recipientId": 10,
+      "recipientNickname": "Sebastien",
+      "senderNickname": "userId",
+      "id": 5
     }
   ],
   "messages": [
@@ -53,6 +64,69 @@
       "timestamp": 1620284667,
       "authorId": 2,
       "body": "Bonjour c'est le premier message de la seconde conversation"
+    },
+    {
+      "id": 5,
+      "conversationId": 1,
+      "timestamp": 1620284667,
+      "authorId": 1,
+      "body": "Bonjour c'est plus dernier message de la premiere conversation et je suis un message vraiment très long pour vérifier que j'ai une UI pas trop mauvaise"
+    },
+    {
+      "id": 6,
+      "conversationId": 1,
+      "timestamp": 1620288997,
+      "authorId": 2,
+      "body": "D'accord c'est noté"
+    },
+    {
+      "id": 7,
+      "conversationId": 1,
+      "timestamp": 1620288997,
+      "authorId": 2,
+      "body": "C'est bientôt la fin de la conversation!"
+    },
+    {
+      "authorId": 1,
+      "body": "Désolé le message a été loupé je laisse un autre message un peu plus long",
+      "conversationId": 1,
+      "timestamp": 1654876222159,
+      "id": 9
+    },
+    {
+      "authorId": 1,
+      "body": "Et un autre message encore un peu plus long pour vérifier le scroll sur cette conversation super longue et super ennuyante !",
+      "conversationId": 1,
+      "timestamp": 1654876263209,
+      "id": 10
+    },
+    {
+      "authorId": 2,
+      "body": "Test",
+      "conversationId": 1,
+      "timestamp": 1655209099540,
+      "id": 11
+    },
+    {
+      "authorId": 2,
+      "body": "Et un autre message encore un peu plus long pour vérifier le scroll sur cette conversation super longue et super ennuyante !",
+      "conversationId": 1,
+      "timestamp": 1655210332015,
+      "id": 12
+    },
+    {
+      "authorId": 1,
+      "body": "qfqfqf",
+      "conversationId": 2,
+      "timestamp": 1655224251634,
+      "id": 13
+    },
+    {
+      "authorId": 1,
+      "body": "test\n",
+      "conversationId": 1,
+      "timestamp": 1655282373435,
+      "id": 14
     }
   ],
   "users": [
@@ -74,6 +148,36 @@
     {
       "id": 4,
       "nickname": "Elodie",
+      "token": "xxxx"
+    },
+    {
+      "id": 5,
+      "nickname": "Mael",
+      "token": "xxxx"
+    },
+    {
+      "id": 6,
+      "nickname": "Jorge",
+      "token": "xxxx"
+    },
+    {
+      "id": 7,
+      "nickname": "Antoine",
+      "token": "xxxx"
+    },
+    {
+      "id": 8,
+      "nickname": "Fran",
+      "token": "xxxx"
+    },
+    {
+      "id": 9,
+      "nickname": "Carlos",
+      "token": "xxxx"
+    },
+    {
+      "id": 10,
+      "nickname": "Sebastien",
       "token": "xxxx"
     }
   ]

@@ -6,24 +6,21 @@ const NProgressStyle = createGlobalStyle`
   }
 
   #nprogress .bar {
-    position: fixed;
-    z-index: 1031;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 5px;
-
     background: ${({ theme }) => theme.palette.secondary} !important;
+    height: 5px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1031;
   }
 
   #nprogress .peg {
+    height: 100%;
     position: absolute;
     right: 0;
-    width: 100px;
-    height: 100%;
-
     transform: rotate(3deg) translate(0, -4px);
+    width: 100px;
   }
 `
 

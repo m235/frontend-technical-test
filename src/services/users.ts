@@ -1,10 +1,19 @@
 import apiClient from '@/services/client'
+import { User } from '@/types/user'
 
 export enum UsersApi {
   GET_USERS = '/users',
-  GET_USER_BY_ID = '/users/:id',
+  GET_USER_BY_ID = '/user/:id',
 }
 
-export const getUsers = async () => apiClient.get<any>(UsersApi.GET_USERS)
+export const getUsers = async () => {
+  const { data } = await apiClient.get<User[]>(UsersApi.GET_USERS)
 
-export const getUser = async (userId: number) => apiClient.delete<any>(UsersApi.GET_USER_BY_ID.replace(':id', String(userId)))
+  return data
+}
+
+export const getUser = async (userId: number) => {
+  const { data } = await apiClient.get<[User]>(UsersApi.GET_USER_BY_ID.replace(':id', String(userId)))
+
+  return data
+}

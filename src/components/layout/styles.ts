@@ -1,38 +1,39 @@
 import styled from 'styled-components'
 
-import AvatarBase from '@/components/avatar'
-
 export const Container = styled.div`
-  display: flex;
-  padding: 0;
   background-color: ${({ theme }) => theme.palette.backgrounds.contrasted};
-  min-height: 100vh;
-  font-size: 14px;
+  display: flex;
+  font-size: 0.85rem;
+  padding: 0;
   word-break: break-word;
 `
 
 export const Content = styled.div`
-  margin-left: 64px;
   display: flex;
-  padding: ${({ theme }) => theme.spacing.s200} ${({ theme }) => theme.spacing.s300};
-  width: 100%;
   justify-content: center;
+  padding: ${({ theme }) => theme.spacing.s100};
+  width: 100%;
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+    margin-left: ${({ theme }) => theme.spacing.s400};
+    padding: ${({ theme }) => theme.spacing.s200} ${({ theme }) => theme.spacing.s300};
+  }
 `
 
 export const Menu = styled.aside`
-  height: 100vh;
-  width: 64px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: ${({ theme }) => theme.spacing.s200} ${({ theme }) => theme.spacing.s100};
-  
-  background-color: ${({ theme }) => theme.palette.primary};
-`
+  display: none;
 
-export const Avatar = styled(AvatarBase)`
+  @media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+    align-items: center;
+    background-color: ${({ theme }) => theme.palette.primary};
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    left: 0;
+    padding: ${({ theme }) => theme.spacing.s200} ${({ theme }) => theme.spacing.s100};
+    position: fixed;
+    top: 0;
+    width: 64px;
+  }
 `

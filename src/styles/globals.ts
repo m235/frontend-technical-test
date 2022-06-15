@@ -3,10 +3,11 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
   html,
   body {
-    padding: 0;
+    background-color: ${({ theme }) => theme.palette.backgrounds.contrasted};
+    color: ${({ theme }) => theme.palette.texts.dark};
+    font-family: "Open Sans", sans-serif;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(70, 70, 80);
+    padding: 0;
   }
 
   a {
@@ -19,7 +20,6 @@ const GlobalStyle = createGlobalStyle`
   *::after {
     box-sizing: border-box;
   }
-
 
   body,
   fieldset,
@@ -36,17 +36,13 @@ const GlobalStyle = createGlobalStyle`
   ol,
   p,
   ul {
-    padding: 0;
     border: 0;
     margin: 0;
+    padding: 0;
   }
 
   ul {
     list-style: none;
-  }
-
-  a {
-    text-decoration: none;
   }
 
   header,
@@ -55,8 +51,8 @@ const GlobalStyle = createGlobalStyle`
   aside,
   figure {
     display: block;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   body,
@@ -69,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 `
 

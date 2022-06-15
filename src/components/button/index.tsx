@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
+import React, { ButtonHTMLAttributes, FC } from 'react'
 
 import * as Styles from './styles'
 
-export type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+export type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: 'primary' | 'secondary'
 }
 
-const Button: FC<Props> = ({ children, variant = Variant.PRIMARY, ...buttonProps }) => {
+const Button: FC<Props> = ({ children, variant = 'primary', ...buttonProps }) => {
   return (
     <Styles.Button variant={variant} {...buttonProps}>
       {children}

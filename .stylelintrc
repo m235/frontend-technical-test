@@ -1,0 +1,14 @@
+{
+  "processors": ["stylelint-processor-styled-components"],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-styled-components"],
+  "customSyntax": "postcss-scss",
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "value-keyword-case": null,
+    "keyframes-name-pattern": null,
+    "no-eol-whitespace": [true, {"ignore": ["empty-lines"]}],
+    "property-no-vendor-prefix": [true, { "ignoreProperties": ["box-orient", "line-clamp"] }],
+    "value-no-vendor-prefix": [true, { "ignoreValues": ["box"] }]
+  }
+}

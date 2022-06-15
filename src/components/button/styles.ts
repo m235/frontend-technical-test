@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components'
 import { Props } from '@/components/button/index'
 
 const primaryStyle = css`
-  border: none;
   background-color: ${({ theme }) => theme.palette.primary};
+  border: none;
   color: ${({ theme }) => theme.palette.texts.light};
 
   &:hover {
@@ -17,26 +17,31 @@ const secondaryStyle = css`
   color: ${({ theme }) => theme.palette.primary};
 
   &:hover {
-    color: ${({ theme }) => theme.palette.texts.light};
     background-color: ${({ theme }) => theme.palette.primary};
+    color: ${({ theme }) => theme.palette.texts.light};
   }
 `
 
 export const Button = styled.button<Pick<Props, 'variant'>>`
   border-radius: 16px;
- 
-  padding:  ${({ theme }) => theme.spacing.s100} ${({ theme }) => theme.spacing.s200};
+  padding: ${({ theme }) => theme.spacing.s100} ${({ theme }) => theme.spacing.s200};
   transition: 0.2s background-color, color ease-in;
-  
+
   &:hover {
     cursor: pointer;
   }
-  
+
   &:disabled {
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+    color: #999;
     cursor: not-allowed;
-    background-color: rgb(244, 246, 247);
-    color: #999999;
+
+    &:hover {
+      background-color: transparent;
+      color: #999;
+    }
   }
-  
+  /* stylelint-disable-next-line order/properties-alphabetical-order */
   ${({ variant }) => (variant === 'primary' ? primaryStyle : secondaryStyle)};
 `

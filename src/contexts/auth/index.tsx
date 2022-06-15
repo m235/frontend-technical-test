@@ -1,14 +1,12 @@
-import { AxiosError } from 'axios'
 import React, { createContext, FC, ReactNode, useContext } from 'react'
-import { useQuery } from 'react-query'
 
-import { getUser } from '@/services/users'
-import { User } from '@/types/user'
+import useUser from '@/hooks/useUser'
+import type { User } from '@/types/user'
 import { getLoggedUserId } from '@/utils/getLoggedUserId'
 
 type CtxProps = {
   userId?: number | null
-  user?: User
+  user?: [User]
 }
 
 export const AuthContext = createContext<CtxProps>({
@@ -16,18 +14,14 @@ export const AuthContext = createContext<CtxProps>({
   user: null,
 })
 
-type Props = {
+interface Props {
   children?: ReactNode
 }
 
 const AuthProvider: FC<Props> = ({ children }) => {
   const userId = getLoggedUserId()
 
-  const { data } = useQuery<User, AxiosError>(['user', userId], async () => {
-    const { data } = await getUser(userId)
-
-    return data[0]
-  })
+  const { data } = useUser(userId)
 
   return <AuthContext.Provider value={{ userId, user: data }}>{children}</AuthContext.Provider>
 }

@@ -1,22 +1,24 @@
 import React, { FC, ReactNode } from 'react'
 
-import * as Styles from './styles'
-import Avatar, { Size, Variant } from '@/components/avatar'
+import Avatar from '@/components/avatar'
 
-type Props = {
+import * as Styles from './styles'
+
+interface Props {
   children?: ReactNode
 }
-const Message: FC<Props> = ({ children }) => {
+
+const Layout: FC<Props> = ({ children }) => {
   return (
     <Styles.Container>
       <Styles.Menu>
-        <Styles.Avatar size={Size.SMALL} variant={Variant.SECONDARY}>
+        <Avatar size="small" variant="secondary">
           ML
-        </Styles.Avatar>
+        </Avatar>
       </Styles.Menu>
       <Styles.Content>{children}</Styles.Content>
     </Styles.Container>
   )
 }
 
-export default Message
+export default Layout
