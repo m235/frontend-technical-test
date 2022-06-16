@@ -3,12 +3,19 @@ const theme = {
     primary: '#557bf4',
     secondary: '#495897',
     backgrounds: {
-      light: '#ffffff',
+      light: '#fff',
       contrasted: 'rgb(244, 246, 247)',
+    },
+    grays: {
+      lighter: '',
+      light: '',
+      normal: '#ddd',
+      dark: '',
+      darker: '',
     },
     texts: {
       dark: 'rgb(70, 70, 80)',
-      light: '#ffffff',
+      light: '#fff',
     },
   },
   spacing: {

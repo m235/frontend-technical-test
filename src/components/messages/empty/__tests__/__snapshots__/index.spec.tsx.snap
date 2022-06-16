@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:messages:empty should render default correctly 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ iAjNXW"
+    data-testid="no-message"
+  >
+    <i
+      class="fa-solid fa-message"
+    />
+    <p
+      class="sc-gsnTZi jaEFii"
+    >
+      There is no message yet.
+    </p>
+  </div>
+</div>
+`;

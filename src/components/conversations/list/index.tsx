@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 
 import ConversationListItem from '@/components/conversations/item'
-import { useAuth } from '@/contexts/auth'
+import useAuth from '@/hooks/useAuth'
 import useConversations from '@/hooks/useConversations'
 
 import * as Styles from './styles'

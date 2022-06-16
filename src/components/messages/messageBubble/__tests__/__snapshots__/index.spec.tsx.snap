@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:messages:messageBubble should render default correctly 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ fiwDzt"
+  >
+    <p>
+      Hello
+    </p>
+  </div>
+</div>
+`;
+
+exports[`components:messages:messageBubble should render mine correctly 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ bUZcxH"
+  >
+    <p>
+      Hello Me
+    </p>
+  </div>
+</div>
+`;

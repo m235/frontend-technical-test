@@ -2,7 +2,7 @@ import React, { FC, useMemo } from 'react'
 import { useRouter } from 'next/router'
 
 import Avatar from '@/components/avatar'
-import { useAuth } from '@/contexts/auth'
+import useAuth from '@/hooks/useAuth'
 import useConversations from '@/hooks/useConversations'
 import useCreateConversation from '@/hooks/useCreateConversation'
 import useUsers from '@/hooks/useUsers'

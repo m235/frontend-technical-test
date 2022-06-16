@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import { useAuth } from '@/contexts/auth'
+import useAuth from '@/hooks/useAuth'
 import type { Conversation as ConversationType } from '@/types/conversation'
 import { getCorrespondent } from '@/utils/getCorrespondent'
 

@@ -4,7 +4,7 @@ import AvatarBase from '@/components/avatar'
 
 export const Container = styled.div`
   align-items: center;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.palette.backgrounds.light};
   border-radius: 4px;
   display: flex;
   height: 120px;

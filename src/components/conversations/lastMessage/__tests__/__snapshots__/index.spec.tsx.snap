@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:conversations:lastMessage should render default correctly 1`] = `
+<div>
+  <span
+    class="sc-bczRLJ gLjPvE"
+    data-testid="loading"
+  />
+</div>
+`;

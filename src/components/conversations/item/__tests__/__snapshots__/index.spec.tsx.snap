@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:conversations:item should render default correctly 1`] = `
+<div>
+  <a
+    href="/messages/1"
+  >
+    <div
+      class="sc-eCYdqJ isacuL"
+      role="listitem"
+    >
+      <div
+        class="sc-hKMtZM faynUP sc-jSMfEi bMewtJ"
+      >
+        T
+      </div>
+      <div
+        class="sc-gKXOVf gjdvix"
+      >
+        <h2
+          class="sc-iBkjds bjHoco"
+        >
+          <span>
+            Travolta
+          </span>
+        </h2>
+        <span
+          class="sc-bczRLJ gLjPvE"
+          data-testid="loading"
+        />
+      </div>
+    </div>
+  </a>
+</div>
+`;

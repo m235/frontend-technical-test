@@ -1,7 +1,7 @@
 import React, { ChangeEventHandler, FC, MouseEventHandler, useState } from 'react'
 import { useQueryClient } from 'react-query'
 
-import { useAuth } from '@/contexts/auth'
+import useAuth from '@/hooks/useAuth'
 import Button from '@/components/button'
 import MessageInput from '@/components/messages/input'
 import useCreateMessage from '@/hooks/useCreateMessage'
@@ -31,18 +31,17 @@ const MessagesFooter: FC<Props> = ({ conversationId }) => {
 
   const handleSendMessage: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.preventDefault()
-    if (body) {
-      mutate({ authorId: userId, conversationId: conversationId, body, timestamp: new Date().getTime() })
-    }
+    mutate({ authorId: userId, conversationId: conversationId, body, timestamp: new Date().getTime() })
   }
 
   const handleTypingMessage: ChangeEventHandler<HTMLTextAreaElement> = (event) => {
-    setBody(event.target.value)
+    setBody(event.currentTarget.value)
   }
 
   return (
     <Styles.Footer>
       <MessageInput
+        data-testid="input-text"
         disabled={isCreating}
         value={body}
         onChange={handleTypingMessage}
@@ -50,7 +49,13 @@ const MessagesFooter: FC<Props> = ({ conversationId }) => {
         rows={1}
         autoFocus={true}
       />
-      <Button aria-label="Send" disabled={isCreating || !body} onClick={handleSendMessage} variant="primary">
+      <Button
+        data-testid="send-msg-btn"
+        aria-label="Send"
+        disabled={isCreating || !body}
+        onClick={handleSendMessage}
+        variant="primary"
+      >
         <i className="fa-solid fa-paper-plane" />
       </Button>
     </Styles.Footer>

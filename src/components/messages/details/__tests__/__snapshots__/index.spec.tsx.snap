@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:conversations:details should render default correctly 1`] = `
+<div>
+  <aside
+    class="sc-eCYdqJ cGbBXZ"
+  >
+    <div
+      class="sc-gKXOVf cFizLK"
+    >
+      <div
+        class="sc-gsnTZi eUelFf sc-hKMtZM iEftAl"
+      >
+        B
+      </div>
+      <h2
+        class="sc-jSMfEi eLjiwY"
+      >
+        Conversation with 
+        <span>
+          Bob
+        </span>
+      </h2>
+      <span
+        class="sc-bczRLJ gLjPvE"
+        data-testid="text-skeleton"
+      />
+    </div>
+    <button
+      class="sc-dkzDqf exBfzp sc-ftvSup iAEcyI"
+      data-testid="delete-conversation"
+      disabled=""
+    >
+      <i
+        class="fa-solid fa-trash-can"
+      />
+       Delete this conversation
+    </button>
+  </aside>
+</div>
+`;

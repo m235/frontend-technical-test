@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <NProgressStyle />
       <QueryClientProvider client={queryClient}>
         <Hydrate state={pageProps.dehydratedState}>
-          <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
+          {process.env.NODE_ENV === 'development' && <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />}
           <AuthProvider>
             <Layout>
               <Component {...pageProps} />

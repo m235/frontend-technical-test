@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:conversations:footer should render default correctly 1`] = `
+<div>
+  <footer
+    class="sc-dkzDqf dUruFM"
+  >
+    <textarea
+      class="sc-gsnTZi efMEkn"
+      data-testid="input-text"
+      placeholder="Type your message..."
+      rows="1"
+    />
+    <button
+      aria-label="Send"
+      class="sc-bczRLJ naAMr"
+      data-testid="send-msg-btn"
+      disabled=""
+    >
+      <i
+        class="fa-solid fa-paper-plane"
+      />
+    </button>
+  </footer>
+</div>
+`;

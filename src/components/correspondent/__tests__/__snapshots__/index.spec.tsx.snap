@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:correspondent should render correctly 1`] = `
+<div>
+  <span>
+    Henri
+  </span>
+</div>
+`;
+
+exports[`components:correspondent should render nothing 1`] = `<div />`;

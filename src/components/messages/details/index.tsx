@@ -3,7 +3,7 @@ import React, { FC } from 'react'
 
 import { TextSkeleton } from '@/components/skeleton/styles'
 import Correspondent from '@/components/correspondent'
-import { useAuth } from '@/contexts/auth'
+import useAuth from '@/hooks/useAuth'
 import useConversations from '@/hooks/useConversations'
 import useDeleteConversation from '@/hooks/useDeleteConversation'
 import { getCorrespondent } from '@/utils/getCorrespondent'
@@ -40,13 +40,20 @@ const MessagesDetails: FC<Props> = ({ conversationId }) => {
         <Styles.DetailTitle>
           Conversation with <Correspondent conversation={conversation} />
         </Styles.DetailTitle>
-        {isLoading && <TextSkeleton />}
+        {isLoading && <TextSkeleton data-testid="text-skeleton" />}
         {!isLoading && lastMessage && (
-          <Styles.LastMessageDate>Last message: {new Date(lastMessage.timestamp).toDateString()}</Styles.LastMessageDate>
+          <Styles.LastMessageDate data-testid="last-message-date">
+            Last message: {new Date(lastMessage.timestamp).toDateString()}
+          </Styles.LastMessageDate>
         )}
       </Styles.DetailHeader>
       {isSender(userId, conversation) && (
-        <Styles.DeleteButton disabled={isDeleting} onClick={() => deleteConv(conversationId)} variant="secondary">
+        <Styles.DeleteButton
+          data-testid="delete-conversation"
+          disabled={isDeleting}
+          onClick={() => deleteConv(conversationId)}
+          variant="secondary"
+        >
           <i className="fa-solid fa-trash-can" /> Delete this conversation
         </Styles.DeleteButton>
       )}

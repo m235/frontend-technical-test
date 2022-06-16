@@ -4,7 +4,7 @@ import React, { FC } from 'react'
 import LastMessage from '@/components/conversations/lastMessage'
 import Correspondent from '@/components/correspondent'
 import ErrorBoundary from '@/components/errorBoundary'
-import { useAuth } from '@/contexts/auth'
+import useAuth from '@/hooks/useAuth'
 import { getCorrespondent } from '@/utils/getCorrespondent'
 import type { Conversation } from '@/types/conversation'
 

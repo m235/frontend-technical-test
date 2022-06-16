@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:conversations:list should render default correctly 1`] = `
+<div>
+  <div
+    class="sc-hKMtZM gbmWKO"
+  >
+    <div
+      class="sc-jSMfEi eKMygT"
+      data-testid="message-loading"
+    >
+      <i
+        class="fa-solid fa-message"
+      />
+      <p
+        class="sc-gKXOVf gFxrSo"
+      >
+        Loading messages...
+      </p>
+    </div>
+  </div>
+</div>
+`;

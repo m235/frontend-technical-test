@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:layout should render default correctly 1`] = `
+<div>
+  <div
+    class="sc-gsnTZi jXeaOH"
+  >
+    <aside
+      class="sc-hKMtZM cpDeyM"
+    >
+      <div
+        class="sc-bczRLJ gmdZIB"
+      >
+        M
+      </div>
+    </aside>
+    <div
+      class="sc-dkzDqf kbQJiZ"
+    >
+      Children
+    </div>
+  </div>
+</div>
+`;

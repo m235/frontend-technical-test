@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:messages:loading should render default correctly 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ iAjNXW"
+    data-testid="message-loading"
+  >
+    <i
+      class="fa-solid fa-message"
+    />
+    <p
+      class="sc-gsnTZi jaEFii"
+    >
+      Loading messages...
+    </p>
+  </div>
+</div>
+`;

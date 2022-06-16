@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:button should render default correctly 1`] = `
+<div>
+  <button
+    class="sc-bczRLJ naAMr"
+  >
+    Children
+  </button>
+</div>
+`;
+
+exports[`components:button should render secondary correctly 1`] = `
+<div>
+  <button
+    class="sc-bczRLJ fxYCEc"
+  >
+    Children
+  </button>
+</div>
+`;

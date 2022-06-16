@@ -2,13 +2,13 @@ import React, { FC } from 'react'
 
 import * as Styles from './styles'
 
-const Empty: FC = () => {
+const Loading: FC = () => {
   return (
-    <Styles.Container>
+    <Styles.Container data-testid="message-loading">
       <i className="fa-solid fa-message" />
       <Styles.Text>Loading messages...</Styles.Text>
     </Styles.Container>
   )
 }
 
-export default Empty
+export default Loading

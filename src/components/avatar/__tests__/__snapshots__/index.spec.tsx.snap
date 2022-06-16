@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:avatar should render default correctly 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ fCfHbp"
+  >
+    C
+  </div>
+</div>
+`;
+
+exports[`components:avatar should render small correctly 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ knfGZE"
+  >
+    C
+  </div>
+</div>
+`;

@@ -1,14 +1,14 @@
 import React, { FC } from 'react'
 
-import { Message as MessageType } from '@/types/message'
+import type { Message as MessageType } from '@/types/message'
 
 import * as Styles from './styles'
 
-type Props = MessageType & {
+type Props = Pick<MessageType, 'body'> & {
   isMine: boolean
 }
 
-const Message: FC<Props> = ({ id, body, isMine }) => {
+const MessageBubble: FC<Props> = ({ body, isMine }) => {
   return (
     <Styles.MessageContainer isMine={isMine}>
       <p>{body}</p>
@@ -16,4 +16,4 @@ const Message: FC<Props> = ({ id, body, isMine }) => {
   )
 }
 
-export default Message
+export default MessageBubble

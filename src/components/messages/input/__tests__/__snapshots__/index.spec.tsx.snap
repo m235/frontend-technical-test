@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:messages:input should render default correctly 1`] = `
+<div>
+  <textarea
+    class="sc-bczRLJ fnTHax"
+  />
+</div>
+`;

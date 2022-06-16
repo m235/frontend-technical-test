@@ -10,6 +10,7 @@ module.exports = {
     },
   },
   compiler: {
+    reactRemoveProperties: true,
     styledComponents: true,
   },
   async redirects() {

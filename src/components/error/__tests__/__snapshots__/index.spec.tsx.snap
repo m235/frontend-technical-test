@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components:error should render default correctly 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ jpVHDJ"
+  >
+    <i
+      class="fa-solid fa-bug"
+    />
+    <p
+      class="sc-gsnTZi jaEFii"
+    >
+      Children
+    </p>
+  </div>
+</div>
+`;
+
+exports[`components:error should render full screen correctly 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ zreeu"
+  >
+    <i
+      class="fa-solid fa-bug"
+    />
+    <p
+      class="sc-gsnTZi jaEFii"
+    >
+      Children
+    </p>
+  </div>
+</div>
+`;

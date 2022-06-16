@@ -14,15 +14,16 @@ const LastMessage: FC<Props> = ({ conversationId }) => {
   const lastMessage = messages?.at(-1)
 
   if (isLoading) {
-    return <TextSkeleton />
+    return <TextSkeleton data-testid="loading" />
   }
-
   if (!lastMessage) return null
 
   return (
     <>
-      <Styles.ConversationLastMessage>{lastMessage.body}</Styles.ConversationLastMessage>
-      <Styles.ConversationLastMessageDate>{new Date(lastMessage.timestamp).toDateString()}</Styles.ConversationLastMessageDate>
+      <Styles.ConversationLastMessage data-testid="body">{lastMessage.body}</Styles.ConversationLastMessage>
+      <Styles.ConversationLastMessageDate data-testid="date">
+        {new Date(lastMessage.timestamp).toDateString()}
+      </Styles.ConversationLastMessageDate>
     </>
   )
 }

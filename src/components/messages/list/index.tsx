@@ -2,7 +2,7 @@ import React, { FC, useEffect, useRef } from 'react'
 
 import Empty from '@/components/messages/empty'
 import MessageBubble from '@/components/messages/messageBubble'
-import { useAuth } from '@/contexts/auth'
+import useAuth from '@/hooks/useAuth'
 import useMessages from '@/hooks/useMessages'
 
 import * as Styles from './styles'
@@ -16,7 +16,7 @@ const MessagesList: FC<Props> = ({ conversationId }) => {
   const messageListRef = useRef<HTMLDivElement>(null)
   const { userId } = useAuth()
 
-  const { data: messages, isLoading, isError } = useMessages(conversationId)
+  const { data: messages, isLoading } = useMessages(conversationId)
 
   useEffect(() => {
     if (messageListRef?.current) {
@@ -33,7 +33,7 @@ const MessagesList: FC<Props> = ({ conversationId }) => {
         <>
           {messages?.map((message) => (
             <Styles.MessageWrapper key={message.id} isMine={message.authorId === userId}>
-              <MessageBubble {...message} isMine={message.authorId === userId} />
+              <MessageBubble body={message.body} isMine={message.authorId === userId} />
             </Styles.MessageWrapper>
           ))}
         </>
