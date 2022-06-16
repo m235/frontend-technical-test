@@ -1,3 +1,9 @@
+# How to run:
+```shell
+yarn start-sever
+yarn build & yarn start
+```
+
 # What's done :
 
 - Display a list of all the conversations
