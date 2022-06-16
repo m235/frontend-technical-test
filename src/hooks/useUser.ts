@@ -6,7 +6,7 @@ import type { User } from '@/types/user'
 
 const useUser = (userId: number) => {
   return useQuery<[User], AxiosError>([UsersApi.GET_USER_BY_ID, userId], () => getUser(userId), {
-    useErrorBoundary: true,
+    useErrorBoundary: false,
   })
 }
 

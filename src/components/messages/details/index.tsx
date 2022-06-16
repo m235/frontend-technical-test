@@ -31,6 +31,8 @@ const MessagesDetails: FC<Props> = ({ conversationId }) => {
 
   // note(mlaigle): maybe we can use dedicated endpoints here, but it will cost 2 extra http calls so let's see
   const conversation = conversations?.find((conversation) => conversation.id === conversationId)
+  if (!conversation) throw new Error('No conversation or access restricted')
+
   const lastMessage = messages?.at(-1)
 
   return (
