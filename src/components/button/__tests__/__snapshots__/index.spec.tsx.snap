@@ -3,7 +3,7 @@
 exports[`components:button should render default correctly 1`] = `
 <div>
   <button
-    class="sc-bczRLJ naAMr"
+    class="sc-bczRLJ ekYIRc"
   >
     Children
   </button>
@@ -13,7 +13,7 @@ exports[`components:button should render default correctly 1`] = `
 exports[`components:button should render secondary correctly 1`] = `
 <div>
   <button
-    class="sc-bczRLJ fxYCEc"
+    class="sc-bczRLJ XzVzj"
   >
     Children
   </button>

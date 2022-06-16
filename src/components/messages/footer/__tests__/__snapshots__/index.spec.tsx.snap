@@ -13,7 +13,7 @@ exports[`components:conversations:footer should render default correctly 1`] = `
     />
     <button
       aria-label="Send"
-      class="sc-bczRLJ naAMr"
+      class="sc-bczRLJ ekYIRc"
       data-testid="send-msg-btn"
       disabled=""
     >

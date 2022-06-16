@@ -6,14 +6,14 @@ exports[`components:conversations:list should render default correctly 1`] = `
     class="sc-hKMtZM gbmWKO"
   >
     <div
-      class="sc-jSMfEi eKMygT"
+      class="sc-jSMfEi cKQEPY"
       data-testid="message-loading"
     >
       <i
         class="fa-solid fa-message"
       />
       <p
-        class="sc-gKXOVf gFxrSo"
+        class="sc-gKXOVf gLOqyj"
       >
         Loading messages...
       </p>

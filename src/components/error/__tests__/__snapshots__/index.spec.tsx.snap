@@ -3,13 +3,13 @@
 exports[`components:error should render default correctly 1`] = `
 <div>
   <div
-    class="sc-bczRLJ jpVHDJ"
+    class="sc-bczRLJ tiNKW"
   >
     <i
       class="fa-solid fa-bug"
     />
     <p
-      class="sc-gsnTZi jaEFii"
+      class="sc-gsnTZi fqFNhJ"
     >
       Children
     </p>
@@ -20,13 +20,13 @@ exports[`components:error should render default correctly 1`] = `
 exports[`components:error should render full screen correctly 1`] = `
 <div>
   <div
-    class="sc-bczRLJ zreeu"
+    class="sc-bczRLJ cLfxGt"
   >
     <i
       class="fa-solid fa-bug"
     />
     <p
-      class="sc-gsnTZi jaEFii"
+      class="sc-gsnTZi fqFNhJ"
     >
       Children
     </p>

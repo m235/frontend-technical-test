@@ -3,7 +3,7 @@
 exports[`components:messages:messageBubble should render default correctly 1`] = `
 <div>
   <div
-    class="sc-bczRLJ fiwDzt"
+    class="sc-bczRLJ kLFRYx"
   >
     <p>
       Hello

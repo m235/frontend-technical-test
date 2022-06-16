@@ -3,14 +3,14 @@
 exports[`components:messages:loading should render default correctly 1`] = `
 <div>
   <div
-    class="sc-bczRLJ iAjNXW"
+    class="sc-bczRLJ kEUqAp"
     data-testid="message-loading"
   >
     <i
       class="fa-solid fa-message"
     />
     <p
-      class="sc-gsnTZi jaEFii"
+      class="sc-gsnTZi fqFNhJ"
     >
       Loading messages...
     </p>

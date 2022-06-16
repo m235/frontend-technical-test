@@ -3,7 +3,7 @@
 exports[`components:conversations:lastMessage should render default correctly 1`] = `
 <div>
   <span
-    class="sc-bczRLJ gLjPvE"
+    class="sc-bczRLJ eockqr"
     data-testid="loading"
   />
 </div>

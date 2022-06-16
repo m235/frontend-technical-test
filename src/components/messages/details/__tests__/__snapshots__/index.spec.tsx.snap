@@ -22,12 +22,12 @@ exports[`components:conversations:details should render default correctly 1`] = 
         </span>
       </h2>
       <span
-        class="sc-bczRLJ gLjPvE"
+        class="sc-bczRLJ eockqr"
         data-testid="text-skeleton"
       />
     </div>
     <button
-      class="sc-dkzDqf exBfzp sc-ftvSup iAEcyI"
+      class="sc-dkzDqf deXiHq sc-ftvSup iAEcyI"
       data-testid="delete-conversation"
       disabled=""
     >
