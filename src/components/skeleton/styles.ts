@@ -18,7 +18,7 @@ export const skeletonAnimation = css`
 `
 
 export const TextSkeleton = styled.span`
-  background-color: #ddd;
+  background-color: ${({ theme }) => theme.palette.grays.normal};
   border-radius: 2px;
   display: inline-flex;
   height: 16px;

@@ -33,7 +33,7 @@ export const DetailHeader = styled.div`
 `
 
 export const LastMessageDate = styled.span`
-  color: darkgray;
+  color: ${({ theme }) => theme.palette.grays.dark};
   font-size: 0.75rem;
 `
 

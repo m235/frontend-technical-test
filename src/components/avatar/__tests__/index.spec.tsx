@@ -13,10 +13,10 @@ describe('components:avatar', () => {
 
     expect(container).toMatchSnapshot()
   })
-  it('should contain an img', () => {
+  it('should contain an span', () => {
     const { getByTestId } = render(
       <Avatar>
-        <img data-testid="avatar" alt="fake" />
+        <span data-testid="avatar" />
       </Avatar>
     )
 

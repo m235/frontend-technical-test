@@ -9,6 +9,13 @@ declare module 'styled-components' {
         light: string
         contrasted: string
       }
+      grays: {
+        lighter: string
+        ligth: string
+        normal: string
+        dark: string
+        darker: string
+      }
       texts: {
         dark: string
         light: string

@@ -34,12 +34,12 @@ export const Button = styled.button<Pick<Props, 'variant'>>`
   &:disabled {
     background-color: transparent;
     border: 1px solid #d8d8d8;
-    color: #999;
+    color: ${({ theme }) => theme.palette.grays.light};
     cursor: not-allowed;
 
     &:hover {
       background-color: transparent;
-      color: #999;
+      color: ${({ theme }) => theme.palette.grays.light};
     }
   }
   /* stylelint-disable-next-line order/properties-alphabetical-order */

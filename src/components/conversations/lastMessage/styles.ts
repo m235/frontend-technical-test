@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ConversationLastMessage = styled.div`
   -webkit-box-orient: vertical;
-  color: darkgray;
+  color: ${({ theme }) => theme.palette.grays.dark};
   display: -webkit-box;
   font-size: 0.75rem;
   -webkit-line-clamp: 2;
@@ -12,6 +12,6 @@ export const ConversationLastMessage = styled.div`
 
 export const ConversationLastMessageDate = styled.div`
   align-self: flex-end;
-  color: darkgray;
+  color: ${({ theme }) => theme.palette.grays.dark};
   font-size: 0.75rem;
 `

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   align-items: center;
-  color: #ddd;
+  color: ${({ theme }) => theme.palette.grays.normal};
   display: flex;
   flex-direction: column;
   font-size: 5rem;
@@ -13,7 +13,7 @@ export const Container = styled.div`
 `
 
 export const Text = styled.p`
-  color: #aaa;
+  color: ${({ theme }) => theme.palette.grays.lighter};
   font-size: 1rem;
   margin-top: ${({ theme }) => theme.spacing.s200};
 `

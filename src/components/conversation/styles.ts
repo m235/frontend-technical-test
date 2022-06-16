@@ -22,7 +22,7 @@ export const GoBackContainer = styled.div`
 `
 
 export const BackLink = styled.a`
-  color: #999;
+  color: ${({ theme }) => theme.palette.grays.light};
   font-size: 0.75rem;
 
   &:hover {
