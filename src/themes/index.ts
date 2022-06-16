@@ -4,7 +4,7 @@ const theme = {
     secondary: '#495897',
     backgrounds: {
       light: '#fff',
-      contrasted: 'rgb(244, 246, 247)',
+      contrasted: '#f4f6f7',
     },
     grays: {
       lighter: '',

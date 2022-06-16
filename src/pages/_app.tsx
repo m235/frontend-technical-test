@@ -43,6 +43,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
+        <meta name="theme-color" content={theme.palette.primary} />
+        <link rel="manifest" href="/test.webmanifest" />
         <title>Conversations test</title>
       </Head>
       <GlobalStyle />
