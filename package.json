@@ -10,7 +10,8 @@
     "test": "jest",
     "lint": "next lint",
     "lint:css": "stylelint './src/**/*.ts'",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "postinstall": "npx husky install"
   },
   "engines": {
     "node": ">=16.15.0"
@@ -40,10 +41,12 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "git-cz": "^4.9.0",
+    "husky": "^8.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
     "json-server": "^0.17.0",
+    "lint-staged": "^13.0.1",
     "nock": "^13.2.7",
     "postcss-scss": "^4.0.4",
     "prettier": "^2.7.0",
@@ -55,5 +58,15 @@
     "stylelint-order": "^5.0.0",
     "stylelint-processor-styled-components": "^1.10.0",
     "typescript": "^4.7.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix --cache",
+      "git add ."
+    ],
+    "styles.{ts,tsx}": [
+      "stylelint --cache",
+      "git add ."
+    ]
   }
 }
