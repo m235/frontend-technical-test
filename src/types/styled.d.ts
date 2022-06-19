@@ -11,7 +11,7 @@ declare module 'styled-components' {
       }
       grays: {
         lighter: string
-        ligth: string
+        light: string
         normal: string
         dark: string
         darker: string
